@@ -38,6 +38,7 @@ def get_english_meaning(library, emoticon)
   hash['get_meaning'].each do |key, value|
     if emoticon == value
       answer = key
+      binding.pry
     end
   end
   answer
