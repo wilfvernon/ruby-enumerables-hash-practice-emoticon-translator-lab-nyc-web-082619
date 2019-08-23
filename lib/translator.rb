@@ -20,7 +20,6 @@ end
 load_library(library)
 hash['get_emoticon'].each do |key, value|
   binding.pry
-    end
   end
 end
 
