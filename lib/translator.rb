@@ -17,7 +17,7 @@ def load_library(lib)
   #binding.pry
   hash
 end
-load_library(library)
+hash = load_library(library)
  binding.pry
 hash['get_emoticon'].each do |key, value|
   if emoticon == key
