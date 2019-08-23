@@ -3,8 +3,10 @@ require "yaml"
 
 def load_library(library)
   hash = Hash.new
-  hash['get_meaning'] = Hash[YAML.load_file(library).collect { |item| [item[1], item] } ]
+  hash['get_meaning'] = Hash[YAML.load_file(library).collect { |item| [item[1], item] 
     binding.pry
+  } ]
+    
   hash['get_emoticon']= YAML.load_file(library)
   hash
 
