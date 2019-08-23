@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(library)
   hash = Hash.new
-  hash['get_meaning'] = YAML.load_file('library').each{|key, value| key}
+  hash['get_meaning'] = YAML.load_file('library').keys
   #binding.pry
 end
 
