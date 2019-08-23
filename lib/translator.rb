@@ -2,7 +2,8 @@ require "pry"
 require "yaml"
 
 def load_library(library)
-  hash = YAML.load_file(library)
+  hash = Hash.new
+  hash['get_meaning'] = YAML.load_file('library').each{|key, value| key}
   #binding.pry
 end
 
