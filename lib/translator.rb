@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(library)
   hash = YAML.load_file(library)
-  binding.pry
+  #binding.pry
 end
 
 def get_japanese_emoticon
