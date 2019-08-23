@@ -6,6 +6,7 @@ def load_library(library)
   hash['get_meaning'] = YAML.load_file(library).keys
   hash['get_emoticon']= YAML.load_file(library)
   hash
+  binding.pry
 end
 
 def get_japanese_emoticon
