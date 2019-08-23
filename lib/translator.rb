@@ -21,8 +21,8 @@ end
 hash = load_library(library)
 hash['get_emoticon'].each do |key, value|
   if emoticon == key
-   value = answer
-    end
+    value = answer
+  end
   end
 answer
 end
