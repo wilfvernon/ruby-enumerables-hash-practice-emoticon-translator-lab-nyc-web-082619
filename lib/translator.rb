@@ -20,11 +20,12 @@ end
 hash = load_library(library)
 hash['get_emoticon'].each do |key, value|
   if emoticon == key
-    return value
+   value = answer
     end
-  if val
+  unless answer
+    p "Sorry, that emoticon was not found"
   end
-  
+  end
 end
 
 def get_english_meaning
