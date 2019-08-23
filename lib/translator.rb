@@ -2,7 +2,7 @@ require "pry"
 require "yaml"
 
 def load_library(library)
-   YAML.load_file(library)
+  hash = YAML.load_file(library)
 end
 
 def get_japanese_emoticon
