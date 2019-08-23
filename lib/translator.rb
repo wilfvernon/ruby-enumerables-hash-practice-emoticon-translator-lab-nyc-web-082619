@@ -22,7 +22,9 @@ hash['get_emoticon'].each do |key, value|
   if emoticon == key
     return value
     end
+  if val
   end
+  
 end
 
 def get_english_meaning
